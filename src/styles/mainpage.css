@@ -1,0 +1,67 @@
+.main--page {
+  height: calc(100vh - 80px);
+  /* background-color: black; */
+  color: white;
+}
+
+.main--block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main--profile--pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.main--profile--email {
+  color: white;
+}
+
+.page--video--container {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page--video--container > video {
+  height: 100vh;
+  width: 100%;
+  object-fit: fill;
+}
+
+@media only screen and (min-width: 769px) {
+  .main--profile--name {
+    font-size: 3rem;
+  }
+
+  .main--profile--desgn {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  .main--profile--name {
+    font-size: 2rem;
+  }
+
+  .main--profile--desgn {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main--profile--name {
+    font-size: 1.5rem;
+  }
+
+  .main--profile--desgn {
+    font-size: 1rem;
+  }
+}

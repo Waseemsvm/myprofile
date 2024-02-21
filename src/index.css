@@ -1,0 +1,9 @@
+@import url("./styles/mainpage.css");
+@import url("./styles/navbar.css");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
