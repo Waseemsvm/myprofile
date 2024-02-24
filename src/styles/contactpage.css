@@ -1,0 +1,38 @@
+.contact-container {
+  color: white;
+  height: 100vh;
+}
+
+.contact-container--block {
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+.contact--container--content {
+  display: block;
+  margin-left: 50px;
+}
+
+contact--container--content-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.contact--container--content > div {
+  margin: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact--container--content > div > label {
+  display: inline-block;
+  width: 150px;
+  text-wrap: wrap;
+}
+.contact--container--content > div > a {
+  display: inline-block;
+  width: 150px;
+  text-wrap: wrap;
+  color: white;
+}

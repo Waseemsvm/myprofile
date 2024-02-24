@@ -2,18 +2,24 @@ export default function NavBar() {
   document.addEventListener(
     "click",
     function (event) {
-      if (!event.target?.closest(".menu")) {
-        // !event.target?.closest(".menu-button") ||
+      let targetelement = event.target as HTMLBodyElement;
+      if (!(targetelement as HTMLBodyElement)?.closest(".menu")) {
+        // !targetelement?.closest(".menu-button") ||
         // if menu icon clicked then by pass
         let menuIconClicked =
-          !!event.target?.closest(".menu-button") ||
-          !!event.target?.closest("#menu-toggle");
+          !!(targetelement as HTMLBodyElement)?.closest(".menu-button") ||
+          !!targetelement?.closest("#menu-toggle");
         if (!menuIconClicked && document.querySelector("#menu-toggle"))
-          document.querySelector("#menu-toggle").checked = false;
+          closeMenu();
       }
     },
     { capture: true }
   );
+
+  function closeMenu() {
+    (document.querySelector("#menu-toggle") as HTMLInputElement).checked =
+      false;
+  }
 
   return (
     <section className="top-nav">
@@ -24,16 +30,19 @@ export default function NavBar() {
       </label>
       <ul className="menu">
         <li>
-          <a href="#">Home</a>
+          <a href="#" onClick={closeMenu}>
+            Home
+          </a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about-container" onClick={closeMenu}>
+            About
+          </a>
         </li>
         <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">CV</a>
+          <a href="#contact-container" onClick={closeMenu}>
+            Contact
+          </a>
         </li>
       </ul>
     </section>

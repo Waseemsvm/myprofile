@@ -6,9 +6,12 @@
   /* background-color: #00baf0; */
   /* background: linear-gradient(to left, #f46b45, #eea849); */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #08024e52;
   color: #fff;
   height: 50px;
   padding: 1em;
+  position: sticky;
+  top: 0;
 }
 
 .menu {
@@ -114,7 +117,7 @@
     width: 100%;
     color: white;
     /* background-color: #222; */
-    background-color: rgb(13, 2, 56, 0.3);
+    background-color: rgb(13, 2, 56, 0.5);
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;

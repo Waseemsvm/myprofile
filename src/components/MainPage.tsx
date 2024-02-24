@@ -12,7 +12,7 @@ export default function MainPage() {
           />
         </div>
         <div className="main--profile--name">Waseem Akram P</div>
-        <div className="main--profile--desgn">Developer, Founder</div>
+        <div className="main--profile--desgn">Developer, Founder, Tutor</div>
         <div>
           <a href=""></a>
           <a href=""></a>
