@@ -1,7 +1,6 @@
 export default function NavBar() {
   return (
     <section className="top-nav">
-      {/* <div>Waseem Akram P</div> */}
       <h2>Waseem Akram P</h2>
       <input id="menu-toggle" type="checkbox" />
       <label className="menu-button-container" htmlFor="menu-toggle">
